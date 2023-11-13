@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs')  %>
+<body>
+
+   <%- include('../partials/nav.ejs')  %>
+    <main class="container">
+        <h1>Welcome to my Task page</h1>
+        <section>
+            <% if(tasks.length){ %>
+                <% tasks.map((task)=>{ %>
+                    <h2><%=task.name  %></h2>
+                    <h2><%=task.task  %></h2>
+                    <% }) %>
+                <% }else{ %>
+                    <h3>No Task Today</h3>
+                   <% } %>
+                
+        </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam animi illum itaque sequi nisi facilis consectetur est ex, accusantium temporibus adipisci nihil! Eos ipsam eaque obcaecati vel. Sunt doloribus aspernatur eaque, consequuntur neque alias animi obcaecati, maxime, libero nobis sapiente deserunt dignissimos nulla aliquam itaque. Aliquid ad non odit porro sapiente ut reiciendis corrupti temporibus dolor? Exercitationem magni error veritatis reprehenderit assumenda consequatur, aliquam nisi, distinctio quis rem facilis laudantium suscipit. Dolorum ratione, sapiente delectus laborum blanditiis accusamus exercitationem recusandae expedita maiores minima doloremque dignissimos cum deleniti itaque id unde iusto possimus ex placeat quaerat inventore ipsum nesciunt voluptate illum?</p>
+    </main>
+
+
+    <%- include('../partials/footer.ejs')  %>
+</body>
+</html>

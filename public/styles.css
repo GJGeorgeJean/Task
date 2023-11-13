@@ -1,0 +1,44 @@
+body{
+    background-color: honeydew;
+}
+.container{
+    width: 90%;
+    margin: auto;
+   }
+   nav{
+    display: flex;
+    justify-content: space-between;
+   }
+   a{
+    text-decoration: none;
+   }
+   li{
+    list-style: none;
+   }
+   ul{
+    display: flex;
+    gap: 2rem;
+   }
+   /* form style */
+   .fom{
+    background-color: gainsboro;
+    background-size: cover;
+    
+
+   }
+   form{
+    width: 10rem;
+    height: 25rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    font-size: x-large;
+    
+    
+   }
+   form button{
+    background-color: purple;
+    color: white;
+    width:70% ;
+    height: 30px;
+    font-size: 1rem;
+   }
