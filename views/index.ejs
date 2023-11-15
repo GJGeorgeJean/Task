@@ -8,9 +8,13 @@
         <h1>Welcome to my Task page</h1>
         <section>
             <% if(tasks.length){ %>
-                <% tasks.map((task)=>{ %>
-                    <h2><%=task.name  %></h2>
-                    <h2><%=task.task  %></h2>
+                <% tasks.map((tasks)=>{ %>
+                    <a href="/api/v1/route/<%- tasks._id  %>">
+                        <h2><%=tasks.name  %></h2>
+                    <p><%=tasks.tasks  %></p>
+                    <p><%- tasks._id %> </p>
+                    </a>
+                    
                     <% }) %>
                 <% }else{ %>
                     <h3>No Task Today</h3>
